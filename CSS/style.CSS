@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+.logo{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 600;
+    color: #D6000D;
+}
+#logo-ponto{
+    color: black;
+}
+.nav-container{
+    flex: 0 1 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+.btn:hover{
+    color: gray;
+}
+.destaque{
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: #D6000D;
+    color: white;
+}
+.destaque:hover{
+    border: 1px solid #D6000D;
+    background-color: white;
+    color: #D6000D;
+}
+/*main*/
+.sec{
+    margin: 30px auto;
+    max-width: 900px;
+    display: flex;
+    justify-content:space-between ;
+}
+.sec__text .destaque{
+    flex: 1;
+    align-self: flex-start;
+    margin-top: 10%;
+}
+.sec__text{
+    flex-direction: column;
+    justify-content: center;
+}
+.sec__text h2{
+    font-size: 20px;
+    font-weight: 600;
+}
+.sec__text h1{
+    margin-bottom: 10px;
+    font-size: 3em;
+    color: #D6000D;
+    font-weight: 700;
+}
+.sec__img{
+    width: 45%;
+}
+.sec__img img{
+    width: 100%;
+}
+.sec ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec ul li{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    font-size: 20px;
+    list-style: none;
+}
+.sec ul li::before{
+    display: inline-block;
+    margin-right: 20px;
+    background-color: #D6000D;
+    height: 20px;
+    width: 20px;
+    content: '';
+    border-radius: 50%;
+}
+
+.contact-phone .destaque{
+    text-align: center;
+}
+.contact-phone {
+    margin: 20px 0px;
+}
+.contact-container{
+    padding: 20px 0px;
+}
+.text{
+    background-color: gainsboro;
+    border-style: none;
+    height: 100%;
+    margin-right: 10px;
+    padding: 12px;
+    border-radius: 10px;
+    color: white;
+}
+.btn-phone {
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: #D6000D;
+    color: white;
+}
+.feedback{
+    margin-bottom: 20px;
+    width: 48%;
+    background-color: gainsboro;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-perfil{
+    padding: 2%;
+    width: 30%;
+}
+.img-perfil img{
+    width: 100%;
+    border-radius: 50%;
+}
+footer {
+    padding: 0px 20px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    background-color: black;
+}
+.footer-div h3{
+    margin: 5px 0px;
+    font-weight: 300;
+}
+.footer-div{
+    flex: 0 1 200px;
+    padding: 20px 0px;
+}
+.footer-div img {
+    margin: 20px;
+    background-color: white;
+    border-radius: 50%;
+}
+@media (max-width: 700px){
+    .sec__text a{
+        margin: 0 auto;
+    }
+    #hidden{
+        display: none;
+    }
+    .header-container{
+        flex-direction: column;
+    }
+    .sec{
+        flex-direction: column;
+        align-items: center;
+    }
+    .sec__img {
+        width: 100%;
+    }
+    .sec__text h2,h1{
+        text-align: center;
+    }
+    .sec ul li{
+        font-size: 2em;
+    }
+    .sec ul{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0px;
+    }
+    .contact-phone{
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+    }
+    .text{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    .feedback{
+        width: 100%;
+    }
+    .sec{
+        padding:  0px 10px;
+    }
+}
+@media (max-width: 430px){
+    footer{
+        flex-direction: column;
+    }
+    .footer-div{
+        text-align: center;
+        flex: 1;
+    }
+}
