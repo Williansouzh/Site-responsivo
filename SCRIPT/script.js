@@ -1,4 +1,4 @@
-const target = document.querySelectorAll('[data-anime]');
+const target = document.querySelectorAll('[data-animate]');
 const animationClass = 'animate';
 
 function animeScroll(){
