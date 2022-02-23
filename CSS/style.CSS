@@ -7,9 +7,12 @@
     font-weight: 500;
     text-decoration: none;
 }
-html{
+html, body {
     overflow-x: hidden;
-}
+  }
+  body {
+    position: relative
+  }
 .header-container{
     display: flex;
     justify-content: space-between;
